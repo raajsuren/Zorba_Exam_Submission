@@ -80,11 +80,11 @@ public class RailwayReservation {
             }
             preparedStatement.setDouble(6,Amount_Paid);
 
-
+            int rowUpdate=preparedStatement.executeUpdate();
+            System.out.println(rowUpdate+"row update");
         }
         catch (Exception e){
             System.err.println(e.getMessage());
-
         }
 
         }
