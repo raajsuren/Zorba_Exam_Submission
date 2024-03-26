@@ -58,9 +58,7 @@ public class RailwayReservation {
 
             System.out.println("Choose Reseravation Type(AC/ Non AC)");
             String Type_Of_Reservation= scanner.next();
-
             boolean IsSeniorCitizen = Passenger_Age>60;
-
             double Amount_Paid= calculateAmount(Type_Of_Reservation);
 
             // Insert from scanner
