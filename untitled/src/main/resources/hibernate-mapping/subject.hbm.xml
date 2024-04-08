@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="org.example.xml_based.entity.Subject" table="subject">
+    <id name="subjectId" column="subject_Id" length="50">
+        <generator class="increment"> </generator>
+
+    </id>
+
+        <property name="subName" column="sub_Name" length="100"> </property>
+
+    </class>
+
+</hibernate-mapping>

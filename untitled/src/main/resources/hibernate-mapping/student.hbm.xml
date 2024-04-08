@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+   <class name="org.example.xml_based.entity.Student" table="student">
+       <id name="studentId" column="student_Id">
+           <generator class="increment"> </generator>
+
+       </id>
+
+       <property name="studName" column="stud_Name" length="100"/>
+       <property name="studRollNumber" column="stud_Roll_Number" length="10"/>
+       <property name="subjectId" column="subject_Id" length="50"/>
+
+      <set name="studentId" table="teacher" cascade="all" inverse="true">
+          <key>
+              <column name="student_Id"/>
+          </key>
+          <one-to-many class="org.example.xml_based.entity.Teacher"/>
+      </set>
+
+   </class>
+
+</hibernate-mapping>
+
+
