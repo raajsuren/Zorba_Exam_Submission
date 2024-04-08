@@ -22,18 +22,19 @@ public class XMLBasedOneToManyMappingExecu {
         Session session=sessionFactory.openSession();
         Transaction tx= null;
 
-        //Quesiton number 1
+        //Quesiton number 1 (Many to one)
         Subject subject= new Subject();
-        System.out.println("Provide Subject id");
-        String subjectName= scanner.next();
-        subject.setSubName(subjectName);
+        subject.setSubName("Physics");
+        subject.setSubName("Chemistry");
+        subject.setSubName("Mathmatics");
+        subject.setSubName("Computer");
+
 
         // Question number 2
         Student student= new Student();
-        System.out.println("Provide Student Name");
-        String studentName= scanner.next();
-        student.setStudName(studentName);
-        student.setStudRollNumber(student.getStudRollNumber());
+        student.setStudName("Rabina Lamichhane");
+        student.setStudRollNumber(15);
+
 
 
 
