@@ -8,4 +8,16 @@ public class RentOfThreeBHKFlat implements Property{
         return 600 * noOfPerson;
 
     }
+
+    public boolean isHasBalcony() {
+        return hasBalcony;
+    }
+
+    public void setHasBalcony(boolean hasBalcony) {
+        this.hasBalcony = hasBalcony;
+    }
+
+    public RentOfThreeBHKFlat(boolean hasBalcony) {
+        this.hasBalcony = hasBalcony;
+    }
 }
