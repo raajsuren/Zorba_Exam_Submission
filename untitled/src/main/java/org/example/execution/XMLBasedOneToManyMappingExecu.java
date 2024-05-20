@@ -30,10 +30,11 @@ public class XMLBasedOneToManyMappingExecu {
         subject.setSubName("Computer");
 
 
-        // Question number 2
+        // Question number 2 (One to One)
         Student student= new Student();
         student.setStudName("Rabina Lamichhane");
         student.setStudRollNumber(15);
+
 
 
 
